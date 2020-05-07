@@ -7,6 +7,9 @@ if (( $+commands[${HELM_2_BIN:=helm2}] )); then
         sed -i \
           -e "s/^#compdef helm\$/#compdef $HELM_2_BIN/"  \
           -e "s/ -F __start_helm helm\$/ -F __start_helm $HELM_2_BIN/" \
+          -e 's/_helm/_helm2/' \
+          -e 's/helm_/helm2_/' \
+          -e 's/"helm"/"helm2"/' \
           $__HELM_COMPLETION_FILE
     fi
 
@@ -22,6 +25,9 @@ if (( $+commands[${HELM_3_BIN:=helm3}] )); then
         $HELM_3_BIN completion zsh >! $__HELM_COMPLETION_FILE
         sed -i \
           -e "s/^#compdef helm\$/#compdef $HELM_3_BIN/" \
+          -e 's/_helm/_helm3/' \
+          -e 's/helm_/helm3_/' \
+          -e 's/"helm"/"helm3"/' \
           $__HELM_COMPLETION_FILE
     fi
 
