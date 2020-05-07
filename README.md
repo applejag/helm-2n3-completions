@@ -51,6 +51,8 @@ zinit wait lucid for \
     jilleJr/helm-2n3-completions
 ```
 
+> **Note:** This adds completions, so make sure it is executed before any call to `zicompinit; zicdreplay`.
+
 ## Force refresh completions cache
 
 If you update your Helm binaries then the completions will most probably be
