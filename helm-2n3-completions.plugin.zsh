@@ -4,9 +4,9 @@ if (( $+commands[${HELM_2_BIN:=helm2}] )); then
 
     if [[ ! -f $__HELM_COMPLETION_FILE ]]; then
         $HELM_2_BIN completion zsh >! $__HELM_COMPLETION_FILE
-        sed -i \
-          "s/^#compdef helm\$/#compdef $HELM_2_BIN/"  \
-          "s/ -F __start_helm helm\$/ -F __start_helm $HELM_2_BIN/" \
+        sed \
+          -i "s/^#compdef helm\$/#compdef $HELM_2_BIN/"  \
+          -i "s/ -F __start_helm helm\$/ -F __start_helm $HELM_2_BIN/" \
           $__HELM_COMPLETION_FILE
     fi
 
@@ -20,8 +20,8 @@ if (( $+commands[${HELM_3_BIN:=helm3}] )); then
 
     if [[ ! -f $__HELM_COMPLETION_FILE ]]; then
         $HELM_3_BIN completion zsh >! $__HELM_COMPLETION_FILE
-        sed -i \
-          "s/^#compdef helm\$/#compdef $HELM_3_BIN/" \
+        sed \
+          -i "s/^#compdef helm\$/#compdef $HELM_3_BIN/" \
           $__HELM_COMPLETION_FILE
     fi
 
