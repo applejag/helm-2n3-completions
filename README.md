@@ -39,7 +39,7 @@ $ git clone https://github.com/jilleJr/helm-2n3-completions.git $ZSH/custom/helm
 Add the plugin to the `plugins` array in your `~/.zshrc`:
 
 ```sh
-plugins=(... helm2n3)
+plugins=(... helm-2n3-completions)
 ```
 
 ### Oh My Zsh via Zinit
