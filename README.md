@@ -1,8 +1,8 @@
 # Helm 2 & 3 completions plugin for Oh My Zsh
 
-Inspired by the [`kubectl.plugin.zsh` from Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh/blob/0736a3749a9c9ae4ba3096b0b6c55250f19fef17/plugins/kubectl/kubectl.plugin.zsh#L1-L11),
-this plugin does the same for Helm, but handles side-by-side installs of Helm v2
-and Helm v3.
+Inspired by the [`kubectl.plugin.zsh` from Oh My Zsh][omz-kubectl-inspiration],
+this plugin does the same for [Helm][helm-website], but handles side-by-side
+installs of Helm v2 and Helm v3.
 
 For example, if you were to download and install
 
@@ -66,3 +66,6 @@ $ rm -v $ZSH_CACHE_DIR/helm2_completions
 # Clean Helm v3 completions
 $ rm -v $ZSH_CACHE_DIR/helm3_completions
 ```
+
+[omz-kubectl-inspiration]: https://github.com/ohmyzsh/ohmyzsh/blob/0736a3749a9c9ae4ba3096b0b6c55250f19fef17/plugins/kubectl/kubectl.plugin.zsh#L1-L11
+[helm-website]: https://helm.sh/
