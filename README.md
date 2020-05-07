@@ -1,17 +1,15 @@
 # Helm 2 & 3 completions plugin for Oh My Zsh
 
-> Inspired by the `kubectl.plugin.zsh` from Oh My Zsh
->
-> <https://github.com/ohmyzsh/ohmyzsh/blob/0736a3749a9c9ae4ba3096b0b6c55250f19fef17/plugins/kubectl/kubectl.plugin.zsh#L1-L11>
-
-This gist does the same for helm, but also for helm2 and helm3, in case you were to install multiple helms side by side.
+Inspired by the [`kubectl.plugin.zsh` from Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh/blob/0736a3749a9c9ae4ba3096b0b6c55250f19fef17/plugins/kubectl/kubectl.plugin.zsh#L1-L11),
+this plugin does the same for Helm, but handles side-by-side installs of Helm v2
+and Helm v3.
 
 For example, if you were to download and install
 
 - `https://get.helm.sh/helm-v2.16.7-linux-amd64.tar.gz` into `/usr/local/bin/helm2`
 - `https://get.helm.sh/helm-v3.2.0-linux-amd64.tar.gz` into `/usr/local/bin/helm3`
 
-Then you would get correct completion for both cases.
+Then you would get correct completion for both programs.
 
 ## Installation
 
