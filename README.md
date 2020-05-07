@@ -26,7 +26,7 @@ respectively, before the plugin gets loaded.
 If you have Helm v2 installed as just `helm`, and Helm v3 as `helm3` you only
 need to set the `HELM_2_BIN` environment variable like so:
 
-```zsh
+```sh
 export HELM_2_BIN=helm
 ```
 
@@ -34,13 +34,13 @@ export HELM_2_BIN=helm
 
 Clone this repo into your `~/.oh-my-zsh/custom` folder
 
-```zsh
+```sh
 $ git clone https://github.com/jilleJr/helm-2n3-completions.git $ZSH/custom/helm-2n3-completions
 ```
 
 Add the plugin to the `plugins` array in your `~/.zshrc`:
 
-```zsh
+```sh
 plugins=(... helm2n3)
 ```
 
@@ -48,7 +48,23 @@ plugins=(... helm2n3)
 
 Add the following to your `~/.zshrc`
 
-```zsh
+```sh
 zinit wait lucid for \
     jilleJr/helm-2n3-completions
+```
+
+## Force refresh completions cache
+
+If you update your Helm binaries then the completions will most probably be
+out of date as the `helm-2n3-completions.plugin.zsh` script caches the
+completions.
+
+Clean the cache by removing the respective Helm completions file:
+
+```sh
+# Clean Helm v2 completions
+$ rm -v $ZSH_CACHE_DIR/helm2_completions
+
+# Clean Helm v3 completions
+$ rm -v $ZSH_CACHE_DIR/helm3_completions
 ```
