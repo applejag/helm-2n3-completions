@@ -20,7 +20,7 @@ Then you would get correct completion for both cases.
 Clone this repo into your `~/.oh-my-zsh/custom` folder
 
 ```zsh
-$ git clone https://github.com/jilleJr/helm-2n3.git $ZSH/custom/helm-2n3
+$ git clone https://github.com/jilleJr/helm-2n3-completions.git $ZSH/custom/helm-2n3-completions
 ```
 
 Add the plugin to the `plugins` array in your `~/.zshrc`:
@@ -35,5 +35,5 @@ Add the following to your `~/.zshrc`
 
 ```zsh
 zinit wait lucid for \
-    jilleJr/helm-2n3
+    jilleJr/helm-2n3-completions
 ```
