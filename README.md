@@ -55,9 +55,9 @@ zinit wait lucid for \
 
 ## Force refresh completions cache
 
-If you update your Helm binaries then the completions will most probably be
-out of date as the `helm-2n3-completions.plugin.zsh` script caches the
-completions.
+If you update your Helm binaries or installed a plugin then the completions will
+most probably be out of date as the `helm-2n3-completions.plugin.zsh` script
+caches the completions.
 
 Clean the cache by removing the respective Helm completions file:
 
@@ -68,7 +68,8 @@ removed '/home/yourname/.cache/zinit/helm2_completion'
 removed '/home/yourname/.cache/zinit/helm3_completion'
 ```
 
-Now you can restart your shell and the plugin will regenerate up-to-date completions
+Now you can restart your shell and the plugin will regenerate up-to-date
+completions
 
 [omz-kubectl-inspiration]: https://github.com/ohmyzsh/ohmyzsh/blob/0736a3749a9c9ae4ba3096b0b6c55250f19fef17/plugins/kubectl/kubectl.plugin.zsh#L1-L11
 [helm-website]: https://helm.sh/
