@@ -62,11 +62,10 @@ completions.
 Clean the cache by removing the respective Helm completions file:
 
 ```sh
-# Clean Helm v2 completions
-$ rm -v $ZSH_CACHE_DIR/helm2_completions
-
-# Clean Helm v3 completions
-$ rm -v $ZSH_CACHE_DIR/helm3_completions
+# Clean Helm v2 and v3 completions
+$ rm -vf $ZSH_CACHE_DIR/helm{2,3}_completion
+removed '/home/yourname/.cache/zinit/helm2_completion'
+removed '/home/yourname/.cache/zinit/helm3_completion'
 ```
 
 Now you can restart your shell and the plugin will regenerate up-to-date completions
