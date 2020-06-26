@@ -1,4 +1,4 @@
-This repository ([jilleJr/helm-2n3][repo-url]) contains code
+This repository ([jilleJr/helm-2n3-completions][repo-url]) contains code
 from other open source projects.
 
 Without those this repository would never been created. ❤ Much love.
@@ -33,4 +33,4 @@ SOFTWARE.
 
 </details>
 
-[repo-url]: https://github.com/jilleJr/helm-2n3
+[repo-url]: https://github.com/jilleJr/helm-2n3-completions
