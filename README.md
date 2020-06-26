@@ -69,5 +69,7 @@ $ rm -v $ZSH_CACHE_DIR/helm2_completions
 $ rm -v $ZSH_CACHE_DIR/helm3_completions
 ```
 
+Now you can restart your shell and the plugin will regenerate up-to-date completions
+
 [omz-kubectl-inspiration]: https://github.com/ohmyzsh/ohmyzsh/blob/0736a3749a9c9ae4ba3096b0b6c55250f19fef17/plugins/kubectl/kubectl.plugin.zsh#L1-L11
 [helm-website]: https://helm.sh/
