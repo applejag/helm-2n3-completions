@@ -13,7 +13,7 @@ if (( $+commands[${HELM_2_BIN:=helm2}] )); then
           $__HELM_COMPLETION_FILE
     fi
 
-    [[ -f $__HELM_COMPLETION_FILE ]] && source $__HELM_COMPLETION_FILE
+    [[ -f $__HELM_COMPLETION_FILE ]] && fpath+="$__HELM_COMPLETION_FILE"
 
     unset __HELM_COMPLETION_FILE
 fi
@@ -31,7 +31,7 @@ if (( $+commands[${HELM_3_BIN:=helm3}] )); then
           $__HELM_COMPLETION_FILE
     fi
 
-    [[ -f $__HELM_COMPLETION_FILE ]] && source $__HELM_COMPLETION_FILE
+    [[ -f $__HELM_COMPLETION_FILE ]] && fpath+="$__HELM_COMPLETION_FILE"
 
     unset __HELM_COMPLETION_FILE
 fi
